@@ -10,7 +10,7 @@ public class HandOverHandListBasedSet extends AbstractCompositionalIntSet {
     public HandOverHandListBasedSet(){     
 	  head = new Node(Integer.MIN_VALUE);
 	  tail = new Node(Integer.MAX_VALUE);
-          head.next = tail;
+      head.next = tail;
     }
     
 	@Override
@@ -28,7 +28,8 @@ public class HandOverHandListBasedSet extends AbstractCompositionalIntSet {
 					curr.lock();
 				}
 				if (curr.value==item) {
-					return false;}
+					return false;
+				}
 				Node node = new Node(item);
 				node.next=curr;
 				pred.next=node;
@@ -59,12 +60,8 @@ public class HandOverHandListBasedSet extends AbstractCompositionalIntSet {
 					pred.next=curr.next;
 					return true;}
 				return false;
-			} finally {
-				curr.unlock();
-			}
-		} finally{
-			pred.unlock();
-		}
+			} finally {curr.unlock();}
+		} finally {pred.unlock();}
 	}
 
 	@Override
@@ -82,12 +79,8 @@ public class HandOverHandListBasedSet extends AbstractCompositionalIntSet {
 					curr.lock();
 				}
 				return (curr.value==item);
-			} finally {
-				curr.unlock();
-			} 
-		} finally {
-			pred.unlock();
-		}
+			} finally {curr.unlock();} 
+		} finally {pred.unlock();}
 	}
 
 	@Override
