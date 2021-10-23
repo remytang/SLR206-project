@@ -22,7 +22,8 @@ if [ ! -d "${output}/log" ]; then
   mkdir ${output}/log
 fi
 
-benchs="linkedlists.lockbased.CoarseGrainedListBasedSet linkedlists.lockbased.HandOverHandListBasedSet linkedlists.lockbased.LazyLinkedListSortedSet"
+# benchs="linkedlists.lockbased.CoarseGrainedListBasedSet linkedlists.lockbased.HandOverHandListBasedSet linkedlists.lockbased.LazyLinkedListSortedSet"
+benchs="linkedlists.lockbased.HandOverHandListBasedSet"
 
 for bench in ${benchs}; do
   for write in ${writes}; do
