@@ -16,104 +16,34 @@ Benchmark parameters
   WarmUp:                  	0 s
   Iterations:              	1
   Benchmark:               	linkedlists.lockbased.CoarseGrainedListBasedSet
-Thread #5 finished.
-Thread #0 finished.
-Thread #3 finished.
-Thread #7 finished.
-Thread #2 finished.
 Thread #9 finished.
+Thread #0 finished.
+Thread #2 finished.
+Thread #5 finished.
+Thread #3 finished.
+Thread #4 finished.
+Thread #8 finished.
+Thread #7 finished.
 Thread #1 finished.
 Thread #6 finished.
-Thread #8 finished.
-Thread #4 finished.
 -------------------------------------------------------------------------------
 Benchmark statistics
 -------------------------------------------------------------------------------
   Average traversal length: 	NaN
   Struct Modifications:     	0
-  Throughput (ops/s):       	16558.197127290736
-  Elapsed time (s):         	2.019
-  Operations:               	33431	( 100 %)
-    effective updates:     	1683	( 5.03 %)
-    |--add successful:     	829	( 2.48 %)
-    |--remove succ.:       	854	( 2.55 %)
+  Throughput (ops/s):       	15553.296975706495
+  Elapsed time (s):         	2.017
+  Operations:               	31371	( 100 %)
+    effective updates:     	1605	( 5.12 %)
+    |--add successful:     	791	( 2.52 %)
+    |--remove succ.:       	814	( 2.59 %)
     |--addAll succ.:       	0	( 0.00 %)
     |--removeAll succ.:    	0	( 0.00 %)
     size successful:       	0	( 0.00 %)
-    contains succ.:        	14880	( 44.51 %)
-    unsuccessful ops:      	16868	( 50.46 %)
-  Final size:              	9975
-  Expected size:           	9975
--------------------------------------------------------------------------------
-TM statistics
--------------------------------------------------------------------------------
-  Commits:                  	0
-  |--regular read only  (%) 	0	( NaN %)
-  |--elastic (%)            	0	( NaN %)
-  |--regular update (%)     	0	( NaN %)
-  Starts:                   	0
-  Aborts:                   	0	( 100 %)
-  |--between succ. reads:   	0	( NaN %)
-  |--between read & write:  	0	( NaN %)
-  |--extend upon read:      	0	( NaN %)
-  |--write after read:      	0	( NaN %)
-  |--locked on write:       	0	( NaN %)
-  |--locked before read:    	0	( NaN %)
-  |--locked before eread:   	0	( NaN %)
-  |--locked on read:        	0	( NaN %)
-  |--invalid commit:        	0	( NaN %)
-  |--invalid snapshot:      	0	( NaN %)
-  Read set size on avg.:    	NaN
-  Write set size on avg.:   	NaN
-  Tx time-to-commit on avg.:	NaN microsec
-  Number of elastic reads       0
-  Number of reads in RO prefix  0
--------------------------------------------------------------------------------
-Synchrobench-java
-A benchmark-suite to evaluate synchronization techniques
--------------------------------------------------------------------------------
-
-Benchmark parameters
---------------------
-  Detailed stats:          	enabled
-  Number of threads:       	10
-  Length:                  	2000 ms
-  Write ratio:             	10 %
-  WriteAll ratio:          	0 %
-  Snapshot ratio:          	0 %
-  Size:                    	10000 elts
-  Range:                   	20000 elts
-  WarmUp:                  	0 s
-  Iterations:              	1
-  Benchmark:               	linkedlists.lockbased.CoarseGrainedListBasedSet
-Thread #2 finished.
-Thread #7 finished.
-Thread #3 finished.
-Thread #9 finished.
-Thread #0 finished.
-Thread #6 finished.
-Thread #8 finished.
-Thread #5 finished.
-Thread #1 finished.
-Thread #4 finished.
--------------------------------------------------------------------------------
-Benchmark statistics
--------------------------------------------------------------------------------
-  Average traversal length: 	NaN
-  Struct Modifications:     	0
-  Throughput (ops/s):       	15654.626422563088
-  Elapsed time (s):         	2.021
-  Operations:               	31638	( 100 %)
-    effective updates:     	1613	( 5.10 %)
-    |--add successful:     	805	( 2.54 %)
-    |--remove succ.:       	808	( 2.55 %)
-    |--addAll succ.:       	0	( 0.00 %)
-    |--removeAll succ.:    	0	( 0.00 %)
-    size successful:       	0	( 0.00 %)
-    contains succ.:        	14163	( 44.77 %)
-    unsuccessful ops:      	15862	( 50.14 %)
-  Final size:              	9997
-  Expected size:           	9997
+    contains succ.:        	14171	( 45.17 %)
+    unsuccessful ops:      	15595	( 49.71 %)
+  Final size:              	9977
+  Expected size:           	9977
 -------------------------------------------------------------------------------
 TM statistics
 -------------------------------------------------------------------------------
