@@ -18,7 +18,7 @@ if [ ! -d "${output}/data" ]; then
   mkdir ${output}/data
 fi
 
-benchs="linkedlists.lockbased.HandOverHandListBasedSet"
+benchs="linkedlists.lockbased.CoarseGrainedListBasedSet linkedlists.lockbased.HandOverHandListBasedSet linkedlists.lockbased.LazyLinkedListSortedSet"
 for bench in ${benchs}; do
   touch ${output}/data/${bench:22}_${filename}
   echo "throughput,threads,uratio,lsize" > ${output}/data/${bench:22}_${filename}
