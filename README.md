@@ -1,3 +1,5 @@
+# SLR206project
+
 Java Synchrobench
 =================
 Synchrobench is a micro-benchmark suite used to evaluate synchronization 
@@ -92,5 +94,3 @@ Below is a distribution of operation depending on parameters given. Note that th
 	 * |--writeAll--|--writeSome--|--readAll--|--readSome--|
 	 * |----------update----- --|-------read-only----------| 
          */
-	
-# SLR206project
